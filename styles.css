@@ -1,0 +1,100 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* Background Container */
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+/* Common BG Image Styles */
+
+.bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    /* You can adjust this */
+}
+
+
+/* Specific GIFs */
+
+.bg1 {
+    background-image: url(1.gif);
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.bg2 {
+    background-image: url(2.gif);
+    z-index: 1;
+    opacity: 1.0;
+}
+
+.container {
+    position: fixed;
+    bottom: 30px;
+    right: 300px;
+    left: 300px;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+#chatbot {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 1000px;
+    left: 0px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.main-header {
+    color: rgb(255, 255, 255);
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 100px;
+    height: 50px;
+}
+
+.input {
+    flex: 1;
+    padding: 0px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    margin-right: 10px;
+    height: 50px;
+}
