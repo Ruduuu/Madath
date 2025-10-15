@@ -26,9 +26,7 @@ const qaPairs = {
     "what is mysql": "MySQL is a popular open-source relational database management system.",
     "what is full stack": "Full Stack means working on both the front end (HTML, CSS, JS) and back end (databases, servers) of a web app.",
     "what is frontend": "Frontend development focuses on building the user interface — what users see and interact with in a browser.",
-    "what is backend": "Backend development handles server-side logic, databases, and APIs that power a web application.",
-    "what is kavya": "Kavya means R1,and she is my picchidi,No one can replace her in my life,And i love her soooooooooooooooooooooooooooooooooooo much.",
-    "what is krishnaveni": "Krishnaveni means my bestfriend,and she is my bangaram,No one can replace her in my life,And i love her soooooooooooooooooooooooooooooooooooo much."
+    "what is backend": "Backend development handles server-side logic, databases, and APIs that power a web application."
 };
 
 const form = document.getElementById('chatbot');
@@ -74,4 +72,26 @@ form.addEventListener('submit', (e) => {
             "Sorry, I don’t have an answer for that. Try asking about programming languages!";
         addMessage(response, 'bot');
     }, 1000);
+
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const bg1 = document.querySelector('.bg1');
+    const bg2 = document.querySelector('.bg2');
+
+    let showingBg1 = true;
+    const gifDuration = 5000; // 8 seconds per GIF (adjust as needed)
+
+    // Start with first GIF visible
+    bg1.style.opacity = 1;
+
+    setInterval(() => {
+        if (showingBg1) {
+            bg1.style.opacity = 0;
+            bg2.style.opacity = 1;
+        } else {
+            bg1.style.opacity = 1;
+            bg2.style.opacity = 0;
+        }
+        showingBg1 = !showingBg1;
+    }, gifDuration);
 });
